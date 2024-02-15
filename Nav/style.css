@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 60px;
+    color: white;
+    display: flex;
+    background-color: rgb(52, 66, 52);
+    justify-content: flex-start;
+    padding: 5px;
+    width: 800px;
+    border-radius: 5px;
+}
+
+.menu a{
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    text-decoration:none;
+    padding: 5px;
+}
+
+.menu li{
+    display: inline-block; 
+    margin-bottom: 940px;
+    padding: 10px;  
+}
+
+.search{
+    margin-left: 90px;
+    margin-top: 9px;
+}
+
+.search input{
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+  
+nav button{
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+
