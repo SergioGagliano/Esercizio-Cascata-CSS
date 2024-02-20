@@ -1,0 +1,26 @@
+#green {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+#blue {
+  grid-row: 2/6;
+  grid-column: 3;
+}
+
+#red {
+  grid-row: 2;
+}
+
+#yellow {
+  grid-row: 2;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#orange {
+  grid-column: 1/3;
+}
