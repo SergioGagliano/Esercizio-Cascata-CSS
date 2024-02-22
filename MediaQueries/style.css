@@ -1,0 +1,179 @@
+/* ! Reset */
+body,
+html {
+  font-family: "Intro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+img {
+  height: auto;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+h6 {
+  font-size: 0.6rem;
+}
+a {
+  text-decoration: none;
+}
+
+/************ CONTAINER **************/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #E5E5E5;
+  width: 410px;
+  height: 610px;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow:
+    0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0.691);
+  box-shadow:
+    0px 10px 13px -7px #000000,
+    0px 15px 15px 0px rgba(0, 0, 0, 0.691);
+}
+
+
+header{
+    width: 100%;
+    background-color: #B3B3B3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+ion-icon{
+    font-size: 30px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#name{
+    display: block;
+    font-size: 20px;
+}
+
+#data{
+    color: white;
+}
+
+img{
+   width: 100%;
+}
+
+.icone{
+  display: flex;
+   gap: 10px;
+   padding: 15px;
+}
+
+.icone ion-icon{
+    font-size: 25px;
+    color: #404758;
+}
+
+.footerText{
+    padding: 15px;
+    padding-top: 0;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px){
+     .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr
+     }
+     .card{
+      width: 350px;
+      height: auto;
+      margin:auto;
+     }
+}
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+  .container{
+    display:grid; 
+    grid-auto-columns: 1fr;
+  }
+
+  .card{
+    grid-column: 1;
+    height:550px;
+    width: 300px;
+    margin: 15px
+  }
+
+  .one{
+    margin-top: 5px
+  }
+}
+ 
+/* Desktop */
+@media screen and (min-width: 768px){
+  .container{
+    display:grid;
+    grid-template-rows: 1fr;
+  }
+
+  .card{
+    grid-row: 1
+  }
+}
