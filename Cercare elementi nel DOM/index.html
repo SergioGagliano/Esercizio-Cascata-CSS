@@ -1,50 +1,27 @@
-<!-- Recuperare il valore di ciascun campo di input 
-e creare un oggetto person contenente le proprietà: firstName, lastName e age.
-Infine recuperare l'elemento forme
-aggiungere l'attributo data-person contenente l'oggetto person in formato json. -->
+<!-- Cerca tutti gli elementi con classe "paragrafo".
+Cerca l' elemento con id "elemento-3"
+Cerca tutti gli elementi h2 della pagina -->
 
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Esercizio Cercare Elementi nel DOM</title>
   </head>
   <body>
-    <div id="container">
-      <form>
-        <div>
-          <label>First Name:</label>
-          <input type="text" class="form-input" id="firstName" value="Mario" />
-        </div>
-        <div>
-          <label>Last Name:</label>
-          <input type="text" class="form-input" id="lastName" value="Rossi" />
-        </div>
-        <div>
-          <label>Age:</label>
-          <input type="number" class="form-input" id="age" value="25" />
-        </div>
-      </form>
-    </div>
+    <h2>Benvenuto nella mia Pagina</h2>
+    <p class="paragrafo">Questo è il primo paragrafo.</p>
+    <p class="paragrafo">Questo è il secondo paragrafo.</p>
+    <p class="paragrafo">Questo è il terzo paragrafo.</p>
+    <ul>
+      <h2>Questa è una lista</h2>
+      <li id="elemento-1">Elemento 1</li>
+      <li id="elemento-2">Elemento 2</li>
+      <li id="elemento-3">Elemento 3</li>
+    </ul>
 
-    <script>
-      const name = document.getElementById("firstName") ;
-      const surname = document.getElementById("lastName");
-      const ages = document.getElementById("age");
-      const form = document.querySelector("form");
-   
-
-      const person = {
-        firstName: name.value,
-        lastName: surname.value,
-        age: ages.value,
-      };
-
-      const jsonPerson = JSON.stringify(person);
-
-      form.setAttribute("data-person", jsonPerson);
-
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
